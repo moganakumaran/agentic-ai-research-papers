@@ -1,7 +1,6 @@
-# Research Papers on Agentic AI for Data & AI
+#Agentic AI for Data & AI
 
-Working repository for Mohan's (Mogana Kumaran Sivaraman) research programme on
-agentic AI for data work.
+
 
 ## Paper #1 — Failure Memory for Text-to-SQL Agents
 
