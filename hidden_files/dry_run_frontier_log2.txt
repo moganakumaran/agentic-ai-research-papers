@@ -1,0 +1,12 @@
+frontier dry-run tasks: [72, 96, 306, 469, 591, 721, 1006, 1029, 1192, 1411, 1519]  model: gpt-5-2025-08-07
+resuming: 4 tasks already traced, skipping [72, 96, 306, 469]
+q591 codebase_community: PASS (attempts=1, tokens=1002+297, 33s)
+q721 superhero: PASS (attempts=1, tokens=528+229, 24s)
+q1006 formula_1: FAIL (attempts=1, tokens=1253+1694, 27s)
+q1029 european_football_2: FAIL (attempts=1, tokens=2075+1370, 31s)
+q1192 thrombosis_prediction: PASS (attempts=1, tokens=725+700, 16s)
+q1411 student_club: FAIL (attempts=1, tokens=573+179, 7s)
+q1519 debit_card_specializing: PASS (attempts=1, tokens=341+296, 3s)
+
+FRONTIER DRY RUN DONE: 5/11 passed (45%)  model=gpt-5-2025-08-07
+tokens total: 9784 in + 8079 out; est. cost at $1.25/M in, $10/M out (secondary pricing): $0.09

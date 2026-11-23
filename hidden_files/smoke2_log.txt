@@ -1,0 +1,30 @@
+[call_openai] non-JSON helper output (attempt 0): rc=2 stdout='' stderr="/usr/bin/python3: can't open file '/home/hatch/workspace/workspace/custom-connectors/custom.openai/bin/openai_api.py': [Errno 2] No such file or directory\n"
+[call_openai] non-JSON helper output (attempt 1): rc=2 stdout='' stderr="/usr/bin/python3: can't open file '/home/hatch/workspace/workspace/custom-connectors/custom.openai/bin/openai_api.py': [Errno 2] No such file or directory\n"
+Traceback (most recent call last):
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/pilot_lib.py", line 59, in call_openai
+    out = json.loads(p.stdout)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/pilot.py", line 280, in <module>
+    main()
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/pilot.py", line 233, in main
+    emit(run_task(call, dbp, t, arm=arm, store=store, run_id=rid), "S1")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/pilot.py", line 90, in run_task
+    txt, pt, ot, dt, _sp = call(prompt)
+                           ^^^^^^^^^^^^
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/pilot_lib.py", line 66, in call_openai
+    raise RuntimeError("helper returned non-JSON twice; see log")
+RuntimeError: helper returned non-JSON twice; see log

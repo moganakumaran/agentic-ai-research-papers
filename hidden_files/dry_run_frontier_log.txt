@@ -1,0 +1,12 @@
+frontier dry-run tasks: [72, 96, 306, 469, 591, 721, 1006, 1029, 1192, 1411, 1519]  model: gpt-5-2025-08-07
+q72 california_schools: FAIL (attempts=1, tokens=997+1181, 16s)
+q96 financial: PASS (attempts=1, tokens=729+698, 13s)
+q306 toxicology: FAIL (attempts=1, tokens=476+724, 16s)
+q469 card_games: FAIL (attempts=1, tokens=1085+711, 14s)
+Traceback (most recent call last):
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/dry_run_frontier.py", line 104, in <module>
+    raw, ptok, otok, lat = call_model(prompt)
+                           ^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/hidden_files/dry_run_frontier.py", line 59, in call_model
+    raise RuntimeError(f"API error: {json.dumps(out['error'])[:400]}")
+RuntimeError: API error: {"http_status": 429, "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.", "type": "insufficient_quota", "param": null, "code": "credit_balance_exhausted", "raw": "{'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization

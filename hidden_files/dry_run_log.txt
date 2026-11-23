@@ -1,0 +1,14 @@
+dry-run tasks: [72, 96, 306, 469, 591, 721, 1006, 1029, 1192, 1411, 1519]  model: qwen-coder-3b
+q72 california_schools: FAIL (attempts=3, tokens=3448+282, 106s)
+q96 financial: FAIL (attempts=1, tokens=759+71, 40s)
+q306 toxicology: FAIL (attempts=3, tokens=1678+231, 62s)
+q469 card_games: FAIL (attempts=3, tokens=3398+77, 60s)
+q591 codebase_community: PASS (attempts=1, tokens=1009+35, 45s)
+q721 superhero: PASS (attempts=1, tokens=551+26, 23s)
+q1006 formula_1: FAIL (attempts=1, tokens=1274+18, 52s)
+q1029 european_football_2: FAIL (attempts=3, tokens=6519+183, 132s)
+q1192 thrombosis_prediction: PASS (attempts=1, tokens=769+59, 39s)
+q1411 student_club: PASS (attempts=1, tokens=596+53, 31s)
+q1519 debit_card_specializing: PASS (attempts=1, tokens=382+82, 26s)
+
+DRY RUN DONE: 5/11 passed (45%)  model=qwen-coder-3b

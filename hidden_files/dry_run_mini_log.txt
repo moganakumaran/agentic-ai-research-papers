@@ -1,0 +1,15 @@
+mini dry-run tasks: [72, 96, 306, 469, 591, 721, 1006, 1029, 1192, 1411, 1519]  model: gpt-5-mini-2025-08-07
+q72 california_schools: FAIL (attempts=1, tokens=997+873, 13s)
+q96 financial: PASS (attempts=1, tokens=729+444, 7s)
+q306 toxicology: FAIL (attempts=1, tokens=476+526, 7s)
+q469 card_games: FAIL (attempts=1, tokens=1085+391, 7s)
+q591 codebase_community: PASS (attempts=1, tokens=1002+176, 5s)
+q721 superhero: PASS (attempts=1, tokens=528+162, 3s)
+q1006 formula_1: FAIL (attempts=1, tokens=1253+849, 11s)
+q1029 european_football_2: FAIL (attempts=1, tokens=2075+521, 9s)
+q1192 thrombosis_prediction: FAIL (attempts=1, tokens=725+658, 10s)
+q1411 student_club: FAIL (attempts=1, tokens=573+243, 4s)
+q1519 debit_card_specializing: PASS (attempts=1, tokens=341+166, 4s)
+
+MINI DRY RUN DONE: 4/11 passed (36%)  model=gpt-5-mini-2025-08-07
+tokens total: 9784 in + 5009 out; est. cost at $0.25/M in, $2.00/M out (list price): $0.01

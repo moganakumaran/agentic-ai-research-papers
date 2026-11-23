@@ -1,0 +1,253 @@
+[
+ {
+  "title": "ROAM-GRPO: Enforcing Reasoning Diversity in GRPO via Routed Off-mode Approach Mining",
+  "id": "http://arxiv.org/abs/2611.25926v1",
+  "published": "2026-11-19T11:09:34Z",
+  "summary": "Supervised fine-tuning (SFT) paired with Reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant recipe for post-training LLMs on complex reasoning tasks, but has been shown to collapse the policy into a low-diversity mode. Repeated LLM outputs are nearly identical, and pass@k accuracy converges or degrades as a result. We propose ROAM-GRPO (Routed Off-mode Approach Mining for GRPO), an augmentation to the GRPO algorithm which incentivizes exploration of distinct reasoning strategies and aims to increase output creativity during evaluation. ROAM-GRPO detects well-solved p",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "A Model of Diverse Sampling from Language Models",
+  "id": "http://arxiv.org/abs/2611.25003v1",
+  "published": "2026-11-18T17:56:26Z",
+  "summary": "Language models often produce high-quality individual samples but poor sets, with repeated samples clustering around the same semantic modes. We formalize diverse generation as sampling a size-$K$ subset of complete strings from a determinantal point process (DPP), where the likelihood encodes item quality, and the embedding geometry encodes repulsion between similar outputs. Exact inference over all strings is intractable, so we propose PoolDPP: draw a finite candidate pool from a tractable proposal, importance-weight the candidates toward the target quality, and run a $K$-DPP sampler on the ",
+  "cats": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL",
+   "cs.FL",
+   "stat.ML"
+  ]
+ },
+ {
+  "title": "Do Frontier Model Ingredients Add Up? A Replicated Factorial Study of Small Language Models",
+  "id": "http://arxiv.org/abs/2611.24540v1",
+  "published": "2026-11-18T14:48:52Z",
+  "summary": "Building a small language model requires choosing which published improvements to combine. We compare five changes in the same model, using the same data and training budget. We test selected combinations and repeat each one with a second random seed. Mixture-of-experts layers, Muon optimisation and a Gated DeltaNet hybrid give the largest gains. Extra normalisation also helps, while an attention gate with a matched parameter budget adds little on average. The gains mostly combine, but small interactions between changes appear again in the repeated runs. Repetition also reveals benefits that a",
+  "cats": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "A Capability Framework for Evaluating Agentic AI Platforms in Regulated Enterprises",
+  "id": "http://arxiv.org/abs/2611.24039v1",
+  "published": "2026-11-18T08:28:02Z",
+  "summary": "Agentic AI platforms-systems in which LLM agents plan, invoke tools, retain memory and coordinate to change the state of enterprise systems-are being procured faster than they can be measured. Public agent benchmarks score models in fixed harnesses; enterprises buy integrated platforms whose orchestration, memory, governance and tooling layers dominate outcomes, and they buy them largely on the strength of vendor demonstrations. We report an industrial evaluation programme (\"bakeoff\") run by the innovation laboratory of a global bank in which ten platforms-spanning open-source frameworks, prop",
+  "cats": [
+   "cs.AI",
+   "cs.MA",
+   "stat.ML"
+  ]
+ },
+ {
+  "title": "Beyond Replacement: Levenshtein Editing for Diffusion Language Models",
+  "id": "http://arxiv.org/abs/2611.23750v1",
+  "published": "2026-11-18T03:05:15Z",
+  "summary": "Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Di",
+  "cats": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Learning Stratified Policies for Inference-Time Objectives",
+  "id": "http://arxiv.org/abs/2611.23154v1",
+  "published": "2026-11-17T18:06:12Z",
+  "summary": "Inference-time scaling improves the performance of large language models by sampling multiple responses and evaluating their collective utility. However, many existing approaches obtain these samples by repeatedly sampling from a single policy. In this work, we study if the sample budget at inference time can instead be allocated across a population of policies. We introduce stratified policies, where each of $k$ learned policies contributes one response to a $k$-sample inference-time objective. We realize this policy population using separate LoRA adapters on a shared language model backbone ",
+  "cats": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Deploying a Control-Logic LLM Assistant in Air-Gapped Power Plants: Lessons in Source Authority and Bounded Retrieval",
+  "id": "http://arxiv.org/abs/2611.20398v1",
+  "published": "2026-11-16T01:54:11Z",
+  "summary": "Deploying Large Language Model (LLM) assistants in industrial operational technology environments poses constraints largely absent from cloud applications: site policies restrict engineering and operational data from leaving the plant, on-premises compute is limited, and incorrect causal attribution can mislead incident response. We report lessons from deploying a control-logic evidence layer that underpins a broader on-premises operator assistance system at two gas power plants. Two prototypes revealed where generative models added avoidable uncertainty and cost. The first used a Vision Langu",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "When Facts Change, Which Decisions Break? Dependency-Aware Context Graphs for Agents",
+  "id": "http://arxiv.org/abs/2611.19859v1",
+  "published": "2026-11-15T07:53:36Z",
+  "summary": "When an observed fact changes, an agent must identify and repair the decisions that depend on it while preserving unaffected outputs. We investigate the reliability-cost trade-off of field-level dependency graphs extracted from actual agent read traces. A controlled benchmark spans three executable workflow domains and four successive updates, with independent imperative and expression-based references. Across 120 workflows, two models and two repeated runs, we compare full recomputation, rolling summary memory, lexical retrieval, trace-extracted dependencies and verified dependency upper boun",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "A Hierarchical Statistical Framework for Evaluating Agent Reliability",
+  "id": "http://arxiv.org/abs/2611.19614v1",
+  "published": "2026-11-14T20:45:31Z",
+  "summary": "Agents operating in complex scenarios often face uncertainty due to incomplete information about the environment they operate in, ambiguous user queries, complex business rules and the inherently stochastic dynamics of the governing policy. Several new benchmarks have been proposed to evaluate LLM-based agents on complex tasks in multi-tool environments, including settings with policy constraints and varying levels of intent ambiguity. These conditions make it important to evaluate agentic systems systematically and quantify their performance under different conditions to assess their reliabil",
+  "cats": [
+   "cs.AI",
+   "cond-mat.stat-mech",
+   "math.PR"
+  ]
+ },
+ {
+  "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+  "id": "http://arxiv.org/abs/2611.17267v1",
+  "published": "2026-11-12T18:45:58Z",
+  "summary": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire ",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "What Roles Do System Prompts Really Assign? Validating and Steering Occupational Role Vectors in LLMs",
+  "id": "http://arxiv.org/abs/2611.15989v1",
+  "published": "2026-11-11T20:43:45Z",
+  "summary": "Applications built on large language models assign the model a role through its system prompt, intending to shape how it responds for their use case. We introduce a validation framework for extracting and injecting occupational role vectors, activation-level directions that capture how someone in a given occupational role would distinctively respond to a task or question. We validate these vectors through two complementary lenses, on Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct. The interpretability lens asks whether each vector is a stable, separable, domain-consistent representation of its ",
+  "cats": [
+   "cs.CL",
+   "cs.AI",
+   "cs.LG"
+  ]
+ },
+ {
+  "title": "Margin-Guided Token Credit for Reinforcement Learning with Verifiable Rewards",
+  "id": "http://arxiv.org/abs/2611.14015v1",
+  "published": "2026-11-10T12:51:43Z",
+  "summary": "In reinforcement learning with verifiable rewards, a language model is rewarded for a correct final answer, and GRPO passes that reward to every token of the solution in equal measure. We instead place the credit where the model hesitated, in a method we call MCPO (Margin-Credit Policy Optimization). We measure hesitation by the top-2 margin $M=p_1-p_2$ of the policy's next-token distribution, map it to a score with two fixed thresholds, and spread each solution's advantage over its tokens so that the mean stays unchanged. The margin is read from a forward pass the trainer already performs, so",
+  "cats": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "One Temperature to Rule Them All?",
+  "id": "http://arxiv.org/abs/2611.13077v1",
+  "published": "2026-11-09T19:00:01Z",
+  "summary": "Inference-time sampling is a central mechanism for improving large language models, with temperature controlling the tradeoff between reliability and diversity. While recent work suggests that varying temperature across samples can improve multi-sample inference, simple fixed-temperature schemes remain the standard in practice. We investigate this discrepancy in the canonical pass@K setting, asking when temperature diversity is useful, and when a single tuned temperature suffices. To this end, we analyze per-question success probabilities across multiple models and datasets, tracking how they ",
+  "cats": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ {
+  "title": "Primitives and Paths: Predicting What Post-Training Can Do from What the Base Model Already Has",
+  "id": "http://arxiv.org/abs/2611.11260v1",
+  "published": "2026-11-08T09:21:48Z",
+  "summary": "Does reinforcement learning teach language models new capabilities, or merely amplify ones acquired during pre-training? The literature offers evidence for both: pass@$k$ studies suggest RL reweights latent behaviours while some controlled composition studies demonstrate gains beyond simple amplification. We argue that this question has no answer independent of the capability state of the base model, and propose a two-dimensional state space for post-trainability. The first axis, \\emph{effective full-solution support}, measures whether successful trajectories can be sampled under a feasible ex",
+  "cats": [
+   "cs.LG",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Pdb or Not to Be: Comparing Debugging Interfaces With Pass$_{X}$@$k$",
+  "id": "http://arxiv.org/abs/2611.08666v1",
+  "published": "2026-11-05T20:24:07Z",
+  "summary": "Interactive debuggers are indispensable to human software development, yet coding agents overwhelmingly rely on edit-execute-observe loops, using common bash tools, test scripts, and print statements to debug via repeated shell commands. Stepping through a debugger provides live access to runtime state, which may enable different problem-solving capabilities. However, prior work typically introduces the debugger as an additional tool or through a new subagent, making its individual contribution difficult to isolate from the associated scaffold changes. To address this, we compare a debugger-on",
+  "cats": [
+   "cs.AI",
+   "cs.SE"
+  ]
+ },
+ {
+  "title": "Unlocking Criminal Court Decisions: Flexible Information Extraction for Empirical Legal Research",
+  "id": "http://arxiv.org/abs/2611.03051v1",
+  "published": "2026-11-02T12:46:53Z",
+  "summary": "Criminal verdicts contain descriptions of criminal behavior that can support quantitative legal research, but structuring them requires attributes and extraction rules that cannot always be fully specified in advance. We present an LLM-based pipeline that builds a structured dataset through attribute exploration, text span extraction, and value normalization, guided by annotation instructions that legal experts can refine. We evaluate it on two traffic offenses: driving under the influence (DUI) and driving despite a ban (DDB). For DUI, revising the instructions was associated with higher extr",
+  "cats": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Few Trials, Many Metrics: Beta Mixtures for Low-Budget AI Evaluation",
+  "id": "http://arxiv.org/abs/2611.00474v1",
+  "published": "2026-10-31T00:00:53Z",
+  "summary": "Evaluating a stochastic AI system often requires many repeated samples per instance, especially for metrics defined over long horizons. Recent work has shown that modeling instance-level success probabilities with a Beta distribution recovers Pass@$k$ from far fewer samples than direct estimation. We show that this framework supports a broader range of evaluation targets. We fit a mixture of Beta distributions by marginal maximum likelihood, with the number of components chosen by BIC. From that one fit, we compute Pass$^k$ and AUC@$k$ at any horizon in closed form. We also derive delta-method",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "CRoS: Causality Reward on Scrambled CoTs Improves Accuracy and Reasoning Faithfulness",
+  "id": "http://arxiv.org/abs/2610.42054v1",
+  "published": "2026-10-30T17:18:35Z",
+  "summary": "Reinforcement learning with verifiable rewards (RLVR) has become the standard method for training language models to reason. However, RLVR typically relies solely on outcome correctness, which does not guarantee that the CoT causally contributes to the final answer. Without this connection, outcome rewards may fail to reinforce high-quality reasoning. Existing causality metrics assess CoT causality by perturbing the CoT, such as deleting reasoning steps or injecting errors, and measuring changes in the final answer. However, these perturbations inevitably alter information in each step. Conseq",
+  "cats": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "P-ContextBench: From Personal Fact Recall to Personalized Agent Behavior",
+  "id": "http://arxiv.org/abs/2610.40959v2",
+  "published": "2026-10-29T20:38:32Z",
+  "summary": "Large language models (LLMs) are increasingly used for personal tasks, yet evaluating their safe use of personal context remains difficult because such contexts are private, fragmented, dynamic, and socially situated. We introduce P-ContextBench, a realistic, verifiable, and scalable benchmark for evaluating personal-context understanding. P-ContextBench constructs population-structured, life-story-grounded digital humans from demographic seeds reflecting the U.S. population. Rather than using explicit, static profiles, P-ContextBench embeds traits, routines, goals, and constraints as implicit",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "There Is No Free Lunch in RLVR: Every pass@1 Gain Has a pass@k Price",
+  "id": "http://arxiv.org/abs/2610.39295v1",
+  "published": "2026-10-29T03:43:26Z",
+  "summary": "Reinforcement learning with verifiable rewards (RLVR) makes a language model solve more problems on the first try and fewer when given many tries: it raises pass@1 while the base model overtakes it at large sampling budget k. Is this a failure of RL to add reasoning, or a transient that more training removes? We settle the question with a theorem. The reversal is a price, and we compute its exact rate. Modeling RLVR as an exponential tilt of a base policy over strategies shared across prompts, we prove that under exclusive specialization every update that raises pass@1 strictly lowers the succ",
+  "cats": [
+   "cs.LG",
+   "cs.AI",
+   "math.OC",
+   "stat.ML"
+  ]
+ },
+ {
+  "title": "SocialArena: Evaluating Social Intelligence in Large Language Models",
+  "id": "http://arxiv.org/abs/2610.39247v1",
+  "published": "2026-10-29T03:00:43Z",
+  "summary": "We introduce SocialArena, a benchmark for systematically defining and evaluating the social intelligence of large language models (LLMs). Although LLMs are increasingly deployed in socially interactive applications such as mental health counseling, companionship chatbots, and educational tutoring, existing evaluations remain fragmented focusing on isolated capabilities or single scenarios and evaluation reliability is largely unverified. This work makes three main contributions to address these limitations. (1) We first propose a unified three-tier framework that defines social intelligence al",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Seq@K: Evaluating Language Models Under Sequential Feedback",
+  "id": "http://arxiv.org/abs/2610.37859v1",
+  "published": "2026-10-27T19:04:51Z",
+  "summary": "Language-model agents differ fundamentally from prior intelligent systems in their ability to learn from natural language in context. This capability enables agents to iteratively refine their answers in response to feedback, a prevalent mode of operation in modern agentic workflows. However, the community primarily ranks models by metrics such as Pass@1 or Pass@K, which cannot capture how they utilize feedback on prior attempts. We introduce Seq@K, a natural evaluation protocol that measures whether a model can solve a problem within K sequential attempts, provided feedback after each previou",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "A Comprehensive Framework for All Stages of Large-Model Training: From Data and Tokenization, through Pretraining, to Post-Training Alignment",
+  "id": "http://arxiv.org/abs/2610.33451v1",
+  "published": "2026-10-24T05:09:05Z",
+  "summary": "The capabilities of large language models (LLMs) and multimodal LLMs (MLLMs) arise from the synergy of the full training pipeline, including data and tokenization, pretraining, and post-training (supervised fine-tuning, preference alignment, reinforcement learning, and continual optimization), rather than any individual stage. Existing surveys mostly adopt a single-stage or single-technique perspective, treating related research as isolated systems without unified stage division or a horizontally comparable basis. This paper proposes a unified stage division and a six-dimensional analytical fr",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+  "id": "http://arxiv.org/abs/2610.31667v1",
+  "published": "2026-10-22T17:59:48Z",
+  "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an i",
+  "cats": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ {
+  "title": "MQAScore: Fine-Grained Text-Music Alignment Evaluation via Large Audio Language Model",
+  "id": "http://arxiv.org/abs/2610.31083v1",
+  "published": "2026-10-22T10:56:25Z",
+  "summary": "Text-to-music alignment is commonly evaluated by the global similarity between text and audio embeddings, which collapses all described attributes into a single score and obscures which ones are missing. We instead introduce MQAScore, which verifies each atomic musical concept along five clip-level dimensions (genre, instrument, mood/theme, vocal, and usage) by the probability that a large audio language model (LALM) answers affirmatively to a binary question. To assess evaluator reliability, we construct verification labels from presence/absence annotations and LLM-guided concept substitution",
+  "cats": [
+   "cs.SD",
+   "cs.AI",
+   "eess.AS"
+  ]
+ }
+]

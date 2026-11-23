@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ll1Z16j1dgZ9jP+XTeJyRNjQoDQ</id>
+  <title>arXiv Query: search_query=cat:cs.AI AND (all:"pass^k" OR all:"pass at k" OR all:"repeated run" OR all:"evaluation reliability")&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-23T16:24:16Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:cs.AI+AND+(all:%22pass%5Ek%22+OR+(all:%22pass+at+k%22+OR+(all:%22repeated+run%22+OR+all:%22evaluation+reliability%22)))&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>380</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.25926v1</id>
+    <title>ROAM-GRPO: Enforcing Reasoning Diversity in GRPO via Routed Off-mode Approach Mining</title>
+    <updated>2026-11-19T11:09:34Z</updated>
+    <link href="https://arxiv.org/abs/2611.25926v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.25926v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Supervised fine-tuning (SFT) paired with Reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant recipe for post-training LLMs on complex reasoning tasks, but has been shown to collapse the policy into a low-diversity mode. Repeated LLM outputs are nearly identical, and pass@k accuracy converges or degrades as a result. We propose ROAM-GRPO (Routed Off-mode Approach Mining for GRPO), an augmentation to the GRPO algorithm which incentivizes exploration of distinct reasoning strategies and aims to increase output creativity during evaluation. ROAM-GRPO detects well-solved problems during training and transfers them to an "off-mode" track. The model is prompted to produce distinct solution strategies to such problems, which are verified for logical validity and distinctness by an LLM judge and subsequently self-distilled into the policy. Training Qwen3.5-2b on a 1,000-problem subset of the MATH lvl5 dataset, ROAM-GRPO implementation increases peak pass@16 by 4.7% and correct embedding cosine distance by approximately 1.5-2x on a difficult evaluation set.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-19T11:09:34Z</published>
+    <arxiv:comment>Accepted to the NeurIPS 2026 Transitioning from Pre-Training to Post-Training Workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jeff Duan</name>
+    </author>
+    <author>
+      <name>Matt Thomson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.25003v1</id>
+    <title>A Model of Diverse Sampling from Language Models</title>
+    <updated>2026-11-18T17:56:26Z</updated>
+    <link href="https://arxiv.org/abs/2611.25003v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.25003v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models often produce high-quality individual samples but poor sets, with repeated samples clustering around the same semantic modes. We formalize diverse generation as sampling a size-$K$ subset of complete strings from a determinantal point process (DPP), where the likelihood encodes item quality, and the embedding geometry encodes repulsion between similar outputs. Exact inference over all strings is intractable, so we propose PoolDPP: draw a finite candidate pool from a tractable proposal, importance-weight the candidates toward the target quality, and run a $K$-DPP sampler on the induced pool kernel; a greedy MAP variant provides deterministic selection. We prove a finite-sample bound with an explicit constant: the KL divergence between the sampler's output and the target $K$-DPP decays as O(1/N) in the pool size. Empirically, PoolDPP extends the quality--diversity frontier on open-ended generation and the precision--recall frontier on ambiguous text-to-SQL (Ambrosia), and on mathematical reasoning (GSM8K), it raises diversity at about the same pass@$K$.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.FL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-18T17:56:26Z</published>
+    <arxiv:comment>NeurIPS 2026 paper</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Manuel Prada-Corral</name>
+    </author>
+    <author>
+      <name>Yahya Emara</name>
+    </author>
+    <author>
+      <name>Timothy J. O'Donnell</name>
+    </author>
+    <author>
+      <name>Ryan Cotterell</name>
+    </author>
+    <author>
+      <name>Tim Vieira</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.24540v1</id>
+    <title>Do Frontier Model Ingredients Add Up? A Replicated Factorial Study of Small Language Models</title>
+    <updated>2026-11-18T14:48:52Z</updated>
+    <link href="https://arxiv.org/abs/2611.24540v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.24540v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Building a small language model requires choosing which published improvements to combine. We compare five changes in the same model, using the same data and training budget. We test selected combinations and repeat each one with a second random seed. Mixture-of-experts layers, Muon optimisation and a Gated DeltaNet hybrid give the largest gains. Extra normalisation also helps, while an attention gate with a matched parameter budget adds little on average. The gains mostly combine, but small interactions between changes appear again in the repeated runs. Repetition also reveals benefits that an initial statistical estimate treated as noise. These findings apply to our small-model training setting; the expert models also have greater total capacity. The practical lesson is to test promising components together and repeat the comparisons before deciding which ones to keep.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-18T14:48:52Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Biswa Sengupta</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.24039v1</id>
+    <title>A Capability Framework for Evaluating Agentic AI Platforms in Regulated Enterprises</title>
+    <updated>2026-11-18T08:28:02Z</updated>
+    <link href="https://arxiv.org/abs/2611.24039v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.24039v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agentic AI platforms-systems in which LLM agents plan, invoke tools, retain memory and coordinate to change the state of enterprise systems-are being procured faster than they can be measured. Public agent benchmarks score models in fixed harnesses; enterprises buy integrated platforms whose orchestration, memory, governance and tooling layers dominate outcomes, and they buy them largely on the strength of vendor demonstrations. We report an industrial evaluation programme ("bakeoff") run by the innovation laboratory of a global bank in which ten platforms-spanning open-source frameworks, proprietary products and hyperscaler ecosystems-were assessed by a cross-functional panel on nine capability dimensions across three financial-services workloads: counterparty credit risk, retrieval-augmented generation and process automation. Scores separate the field into three tiers that are stable under alternative weightings, and surface workload-specific strengths that aggregates hide. A secondary analysis, however, finds Cronbach's alpha = 0.98 across nominally distinct dimensions and rank correlations &gt;= 0.93 with the total for eight of nine: a halo effect indicating that demonstration-based scoring measures presentation as much as capability. From these lessons we propose a gate-then-score evaluation protocol with four layers (capability, execution reliability, governance gates, business value), trace-level reliability metrics estimated over repeated runs, an autonomy-readiness scale and a reproducibility protocol. We state precisely what the present evidence supports, and what a controlled harness must add to turn enterprise platform evaluation from structured judgement into measurement.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-18T08:28:02Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Abbas Raza Ali</name>
+    </author>
+    <author>
+      <name>Muhammad Ajmal Siddiqui</name>
+    </author>
+    <author>
+      <name>Moona Zahid</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.23750v1</id>
+    <title>Beyond Replacement: Levenshtein Editing for Diffusion Language Models</title>
+    <updated>2026-11-18T03:05:15Z</updated>
+    <link href="https://arxiv.org/abs/2611.23750v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.23750v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Diffusion language models (DLMs) offer a flexible alternative to autoregressive models, enabling any-order infilling. While most existing decoding methods treat decoded tokens as fixed, some recent models allow previously decoded tokens to be revised only by replacing them with alternative tokens, a paradigm we refer to as replacement-only editing (ROE). Although ROE can correct individual tokens, it is inefficient for sequence shifts caused by missing or extra tokens and struggles when errors occur across many positions. To address these limitations, we propose LED (Levenshtein Editing for Diffusion Language Models), a post-training framework that extends ROE with insertion and deletion, enabling Levenshtein-style refinement of generated sequences. It uses two training designs. First, it reconstructs edit supervision on the fly during supervised fine-tuning using longest-common-subsequence alignment, enabling insertion and deletion learning without manually annotated labels. Second, it adopts multi-stage training, where the state from one stage becomes the input to the next, exposing the model to its earlier errors and enabling it to correct them. When applied to the 16B-parameter LLaDA2.1-Mini Base, LED raises the average score across twelve benchmarks from 54.86 to 57.10 under confidence-guided decoding while increasing tokens per forward from 6.14 to 7.05, whereas under confidence-free decoding it raises the average score from 27.52 to 47.19. We further show that LED achieves higher pass@k at large k than thresholded decoding without editing, demonstrating improved generation diversity and revealing the diversity potential of DLMs without confidence guidance. LED also improves robustness to large block sizes, raising the average score from 36.97 to 51.34 at block size 128. Together, these results suggest that LED supports more robust self-correction in DLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-18T03:05:15Z</published>
+    <arxiv:comment>21 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shuaidi Wang</name>
+    </author>
+    <author>
+      <name>Zhuocheng Gong</name>
+    </author>
+    <author>
+      <name>Xuejie Liu</name>
+    </author>
+    <author>
+      <name>Jianguo Li</name>
+    </author>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.23154v1</id>
+    <title>Learning Stratified Policies for Inference-Time Objectives</title>
+    <updated>2026-11-17T18:06:12Z</updated>
+    <link href="https://arxiv.org/abs/2611.23154v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.23154v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Inference-time scaling improves the performance of large language models by sampling multiple responses and evaluating their collective utility. However, many existing approaches obtain these samples by repeatedly sampling from a single policy. In this work, we study if the sample budget at inference time can instead be allocated across a population of policies. We introduce stratified policies, where each of $k$ learned policies contributes one response to a $k$-sample inference-time objective. We realize this policy population using separate LoRA adapters on a shared language model backbone and optimize it for pass@$k$. We theoretically motivate the approach by analyzing the linear setting; a population of LoRAs can achieve zero best-of-$k$ approximation error in settings where every single LoRA has strictly positive prediction error. Empirically, we demonstrate that stratified policies consistently improve pass@$k$ over a single-policy baseline across multiple reasoning tasks. Overall, our results highlight how distributing samples across complementary policies can be a more effective use of sample budget than repeated i.i.d. sampling from a single policy at inference time.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-17T18:06:12Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Mridul Mahajan</name>
+    </author>
+    <author>
+      <name>Xuezhou Zhang</name>
+    </author>
+    <author>
+      <name>Aldo Pacchiano</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.20398v1</id>
+    <title>Deploying a Control-Logic LLM Assistant in Air-Gapped Power Plants: Lessons in Source Authority and Bounded Retrieval</title>
+    <updated>2026-11-16T01:54:11Z</updated>
+    <link href="https://arxiv.org/abs/2611.20398v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.20398v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deploying Large Language Model (LLM) assistants in industrial operational technology environments poses constraints largely absent from cloud applications: site policies restrict engineering and operational data from leaving the plant, on-premises compute is limited, and incorrect causal attribution can mislead incident response. We report lessons from deploying a control-logic evidence layer that underpins a broader on-premises operator assistance system at two gas power plants. Two prototypes revealed where generative models added avoidable uncertainty and cost. The first used a Vision Language Model (VLM) to reconstruct control topology from PDF printouts routinely exchanged by engineers. Across the full 6,979-page document, extraction reached 0.51 connection precision and required 3.1 hours on 4xH200 GPUs; consultation with controls engineers then revealed a native structured export from the authoring system. The second used an LLM tool-calling agent to plan repeatedly over eight predefined graph operations. In a controlled benchmark of 40 template-generated questions, replacing this agent with explicit execution plans reduced mean token use by 20x and median latency by 3x, with identical retrieved node sets across repeated runs. The deployed design ingests the authoritative export into a versioned knowledge graph, executes bounded graph operations in fixed software, and confines the local LLM to fallback intent classification and evidence-grounded explanation. At one site, the graph contains 221K nodes across seven controllers. Our experience suggests a practical division of labor for high-consequence AI: LLMs interpret natural-language requests and explain results, while deterministic software constructs and retrieves technical evidence grounded in authoritative sources. Abstention, entity disambiguation, graph versioning, and read-only integration provide additional safeguards.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-16T01:54:11Z</published>
+    <arxiv:comment>Extended version of a paper accepted at IAAI-27 (AAAI 2027). 8 pages, 2 figures, 3 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yiwei Fu</name>
+    </author>
+    <author>
+      <name>Nicholas Gabriel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19859v1</id>
+    <title>When Facts Change, Which Decisions Break? Dependency-Aware Context Graphs for Agents</title>
+    <updated>2026-11-15T07:53:36Z</updated>
+    <link href="https://arxiv.org/abs/2611.19859v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19859v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When an observed fact changes, an agent must identify and repair the decisions that depend on it while preserving unaffected outputs. We investigate the reliability-cost trade-off of field-level dependency graphs extracted from actual agent read traces. A controlled benchmark spans three executable workflow domains and four successive updates, with independent imperative and expression-based references. Across 120 workflows, two models and two repeated runs, we compare full recomputation, rolling summary memory, lexical retrieval, trace-extracted dependencies and verified dependency upper bounds. Trace-derived graphs reduce reviewed decisions and estimated total cost, but omitted alternative supports and missing repair context can reduce complete-plan correctness. Paired ablations isolate the effects of edge deletion, spurious edges, transitive propagation and context scope. An exploratory enhancement supplies the existing record ID/field directory during extraction without revealing unread values or reference edges. We evaluate this enhancement on 60 fresh workflows with two repeats per model. On this fresh set, the directory-aware graph matches observed full-context complete-plan correctness for gpt-6.1-sol (100%) with an estimated 4.0% total-cost reduction, but reaches only 84.8% versus 99.6% for gpt-6-luna. The results distinguish potential dependency impact from actual decision invalidity and show why selective repair must be evaluated with both executable correctness and full memory-processing cost. The evidence concerns explicit procedural workflows; broad real-world agent-memory generalization remains untested.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-15T07:53:36Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Paul Deepakraj Retinraj</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.19614v1</id>
+    <title>A Hierarchical Statistical Framework for Evaluating Agent Reliability</title>
+    <updated>2026-11-14T20:45:31Z</updated>
+    <link href="https://arxiv.org/abs/2611.19614v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.19614v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Agents operating in complex scenarios often face uncertainty due to incomplete information about the environment they operate in, ambiguous user queries, complex business rules and the inherently stochastic dynamics of the governing policy. Several new benchmarks have been proposed to evaluate LLM-based agents on complex tasks in multi-tool environments, including settings with policy constraints and varying levels of intent ambiguity. These conditions make it important to evaluate agentic systems systematically and quantify their performance under different conditions to assess their reliability in production. This need is evident in the recently introduced Thinkingbox benchmark, where even the strongest models struggle to perform consistently across diverse business scenarios. This paper presents a statistical framework for evaluating uncertainty and reliability in agentic systems. We define a hierarchy of scenarios, instances, and samples to assess model performance and variability systematically. We apply this framework to common metrics found in the literature: mean pass rate, $pass@k$, and $passhat^k$, with uncertainty estimates for each metric. Aggregating metrics at different levels of the hierarchy reveals different structures and properties of the policy model; we connect this hierarchical aggregation with the known process of \emph{coarse-graining} as intended in the physics and statistical literature. We independently derive exact finite-sample expressions for the sampling variances of the unbiased $pass@k$ and $passhatk$ estimators; related results also appear in recent submissions. Our central contribution is a constructive derivation of hierarchical uncertainty propagation, making explicit its correspondence with coarse-graining and separating execution noise from task heterogeneity.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-14T20:45:31Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mirco Milletarì</name>
+    </author>
+    <author>
+      <name>Tuhin Kundu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.17267v1</id>
+    <title>LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds</title>
+    <updated>2026-11-12T18:45:58Z</updated>
+    <link href="https://arxiv.org/abs/2611.17267v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.17267v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world states to evolve along their own temporal processes while preserving verifiable state histories. LiveGeo places geographic tasks within this evolving environment, requiring agents to actively acquire task-relevant information, verify whether the evidence supporting prior decisions remains valid, and revise their plans when necessary. Our results reveal that even frontier LLMs struggle with static tasks, with no model consistently excelling across tasks, while strong static performance does not ensure dynamic reliability. Further analysis identifies a key bottleneck: agents struggle to acquire and translate relevant evidence into valid decisions and maintain their correctness as the world evolves. By releasing LiveGeo together with its GeoWorld platform, we aim to provide the community with a flexible and extensible infrastructure for studying the next generation of agents capable of reliable action in evolving geographic worlds.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-12T18:45:58Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Pengcheng Zhou</name>
+    </author>
+    <author>
+      <name>Xuanyu Liu</name>
+    </author>
+    <author>
+      <name>Yanchen Yin</name>
+    </author>
+    <author>
+      <name>Tianjie Ju</name>
+    </author>
+    <author>
+      <name>Bobo Li</name>
+    </author>
+    <author>
+      <name>Shengqiong Wu</name>
+    </author>
+    <author>
+      <name>Hao Fei</name>
+    </author>
+    <author>
+      <name>Mong-Li Lee</name>
+    </author>
+    <author>
+      <name>Wynne Hsu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.15989v1</id>
+    <title>What Roles Do System Prompts Really Assign? Validating and Steering Occupational Role Vectors in LLMs</title>
+    <updated>2026-11-11T20:43:45Z</updated>
+    <link href="https://arxiv.org/abs/2611.15989v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.15989v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Applications built on large language models assign the model a role through its system prompt, intending to shape how it responds for their use case. We introduce a validation framework for extracting and injecting occupational role vectors, activation-level directions that capture how someone in a given occupational role would distinctively respond to a task or question. We validate these vectors through two complementary lenses, on Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct. The interpretability lens asks whether each vector is a stable, separable, domain-consistent representation of its role: extracted vectors are highly reproducible across repeated runs and sampling temperatures, remain separable even for very similar roles, and agree more with themselves across in-domain and out-of-domain questions than with other roles' signal. The control lens asks whether injecting a role vector during generation makes the model express the role, and sustain it over a conversation, as well as a role prompt does. On Qwen, injecting the vector alone makes the model express the intended role substantially more often than unsteered, but at best matches a role prompt; on both models, adding the vector to the prompt strengthens the role in single answers but did not slow the role's decline over 30 turns. Together, the two lenses show why both are needed: out of domain the role is expressed only subtly, yet the activations still encode it; and a vector that is stable and separable can still barely steer the model's behavior.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-11T20:43:45Z</published>
+    <arxiv:comment>11 pages main text, 35 pages total including references and appendices. Code and data: https://doi.org/10.5281/zenodo.23992923</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jose L. Sampedro Mazon</name>
+    </author>
+    <author>
+      <name>Ilmi Yoon</name>
+    </author>
+    <author>
+      <name>Nadim Saad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.14015v1</id>
+    <title>Margin-Guided Token Credit for Reinforcement Learning with Verifiable Rewards</title>
+    <updated>2026-11-10T12:51:43Z</updated>
+    <link href="https://arxiv.org/abs/2611.14015v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.14015v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In reinforcement learning with verifiable rewards, a language model is rewarded for a correct final answer, and GRPO passes that reward to every token of the solution in equal measure. We instead place the credit where the model hesitated, in a method we call MCPO (Margin-Credit Policy Optimization). We measure hesitation by the top-2 margin $M=p_1-p_2$ of the policy's next-token distribution, map it to a score with two fixed thresholds, and spread each solution's advantage over its tokens so that the mean stays unchanged. The margin is read from a forward pass the trainer already performs, so the method needs no extra model evaluation and no batch statistics. We train MiniCPM5-2B-Base with LoRA for 200 steps on 2,048 DAPO-Math problems and evaluate on six competition-math benchmarks. MCPO beats an unmodified GRPO baseline for all five data seeds, by 6.55 points of macro avg@32 on average (95\% CI $[4.1, 9.0]$), and a Qwen3-4B-Base replication improves for all three seeds ($+4.75$). The gain is largest on problems that GRPO solves only some of the time and grows with $k$ in pass@$k$, reaching 13.8 points at pass@32. MCPO models also write two to three times longer answers, and runs that write longer score higher; our experiments do not separate the two effects.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T12:51:43Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Chi Liu</name>
+    </author>
+    <author>
+      <name>Xin Chen</name>
+    </author>
+    <author>
+      <name>Yuchuan Weng</name>
+    </author>
+    <author>
+      <name>Srinivasan Manoharan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.13077v1</id>
+    <title>One Temperature to Rule Them All?</title>
+    <updated>2026-11-09T19:00:01Z</updated>
+    <link href="https://arxiv.org/abs/2611.13077v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.13077v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Inference-time sampling is a central mechanism for improving large language models, with temperature controlling the tradeoff between reliability and diversity. While recent work suggests that varying temperature across samples can improve multi-sample inference, simple fixed-temperature schemes remain the standard in practice. We investigate this discrepancy in the canonical pass@K setting, asking when temperature diversity is useful, and when a single tuned temperature suffices. To this end, we analyze per-question success probabilities across multiple models and datasets, tracking how they vary with sampling temperature. We identify several consistent properties of these profiles, including that harder questions are less likely to share efficient sampling temperatures, although this trend is only logarithmic in hardness. We then derive an efficient method for evaluating the theoretically optimal multi-temperature allocation scheme, and show that although such a scheme improves performance, its gains over single-temperature baselines are typically modest when temperature is tuned as a function of the sampling budget K. We explain this phenomenon through mathematical mechanisms that we call dulling effects, and show how they ensure the robustness of temperature choices across different question distributions. Our results clarify when multi-temperature sampling is useful, and how temperatures should ideally be chosen.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-09T19:00:01Z</published>
+    <arxiv:comment>Accepted at NeurIPS 2026. 82 pages, 45 figures, 6 tables. Code: https://github.com/avivorly/one-temperature</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aviv Orly</name>
+      <arxiv:affiliation>School of Physics and Astronomy, Tel Aviv University, Israel</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ori Shem-Ur</name>
+      <arxiv:affiliation>School of Physics and Astronomy, Tel Aviv University, Israel</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Yaron Oz</name>
+      <arxiv:affiliation>School of Physics and Astronomy, Tel Aviv University, Israel</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.11260v1</id>
+    <title>Primitives and Paths: Predicting What Post-Training Can Do from What the Base Model Already Has</title>
+    <updated>2026-11-08T09:21:48Z</updated>
+    <link href="https://arxiv.org/abs/2611.11260v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.11260v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Does reinforcement learning teach language models new capabilities, or merely amplify ones acquired during pre-training? The literature offers evidence for both: pass@$k$ studies suggest RL reweights latent behaviours while some controlled composition studies demonstrate gains beyond simple amplification. We argue that this question has no answer independent of the capability state of the base model, and propose a two-dimensional state space for post-trainability. The first axis, \emph{effective full-solution support}, measures whether successful trajectories can be sampled under a feasible exploration budget. The second axis, \emph{atomic primitive coverage}, measures whether the constituent skills of a solution can be executed when the burden of composition is removed. Together, these dimensions motivate three regimes -- amplification, composition-limited, and acquisition-limited -- each predicting a distinct empirical signature and calling for a distinct intervention. We propose a prospective measurement protocol and investigate the framework using synthetic composition tasks across three small language models. We find that primitive mastery alone does not guarantee that RL can learn a composition. Checkpoints that execute every primitive reliably can fail to improve when complete solutions are never sampled during training, whereas modest composition supervision that establishes nonzero support enables substantial RL gains. The framework reframes mid-training as preparation for post-training: its role is to move models into states from which RL can operate effectively.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-08T09:21:48Z</published>
+    <arxiv:comment>10 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Anqi Qu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.08666v1</id>
+    <title>Pdb or Not to Be: Comparing Debugging Interfaces With Pass$_{X}$@$k$</title>
+    <updated>2026-11-05T20:24:07Z</updated>
+    <link href="https://arxiv.org/abs/2611.08666v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.08666v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Interactive debuggers are indispensable to human software development, yet coding agents overwhelmingly rely on edit-execute-observe loops, using common bash tools, test scripts, and print statements to debug via repeated shell commands. Stepping through a debugger provides live access to runtime state, which may enable different problem-solving capabilities. However, prior work typically introduces the debugger as an additional tool or through a new subagent, making its individual contribution difficult to isolate from the associated scaffold changes. To address this, we compare a debugger-only agent against a bash-only agent on all 500 SWE-bench Verified instances, holding the rest of the scaffold fixed. We evaluate both architectures on two models, GPT-OSS-120B and Nemotron-3-Ultra-550B, with three independent runs per architecture $\times$ model configuration. Crucially, to distinguish interface specialization from expanded coverage under repeated sampling, we introduce pass$_X$@$k$, a cross-agent pass@$k$ that provides an unbiased estimator of the probability that at least one of $k$ agents is successful. Although the bash and debugger agents solve partially disjoint subsets of the benchmark in any single pair of runs, our pass$_X$@$2$ estimator reveals that this is largely due to run-to-run variance rather than tool complementarity. Across both models, we find that two bash rollouts outperform the combination of one bash and one debugger rollout. Our findings highlight the importance of accounting for stochastic variance in evaluating agent and tool diversity, and we hope that pass$_X$@$k$ will serve as a useful framework for the community.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-05T20:24:07Z</published>
+    <arxiv:comment>Accepted, NeurIPS 2026 workshop "Who Verifies the Agents? Toward Reliable Agent Development"</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Ryan Magnuson</name>
+    </author>
+    <author>
+      <name>Ellie Kitanidis</name>
+    </author>
+    <author>
+      <name>Ariel Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.03051v1</id>
+    <title>Unlocking Criminal Court Decisions: Flexible Information Extraction for Empirical Legal Research</title>
+    <updated>2026-11-02T12:46:53Z</updated>
+    <link href="https://arxiv.org/abs/2611.03051v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.03051v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Criminal verdicts contain descriptions of criminal behavior that can support quantitative legal research, but structuring them requires attributes and extraction rules that cannot always be fully specified in advance. We present an LLM-based pipeline that builds a structured dataset through attribute exploration, text span extraction, and value normalization, guided by annotation instructions that legal experts can refine. We evaluate it on two traffic offenses: driving under the influence (DUI) and driving despite a ban (DDB). For DUI, revising the instructions was associated with higher extraction accuracy (from 52% to 70% of correctly extracted values) and higher agreement between human annotators. Repeated runs of the same model agreed with each other more than with the gold annotations, showing that consistent output is not necessarily correct, while disagreement between annotators and between models helped reveal unclear instructions. For DDB, where the instructions defined fixed categories and output formats, agreement was high for most attributes.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-02T12:46:53Z</published>
+    <arxiv:comment>Accepted for publication in the proceedings of the 39th International Conference on Legal Knowledge and Information Systems (JURIX 2026)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tomáš Knap</name>
+    </author>
+    <author>
+      <name>Ivana Kvapilíková</name>
+    </author>
+    <author>
+      <name>Jan Černý</name>
+    </author>
+    <author>
+      <name>Klára Bendová</name>
+    </author>
+    <author>
+      <name>Jaromír Šavelka</name>
+    </author>
+    <author>
+      <name>Vojtěch Pour</name>
+    </author>
+    <author>
+      <name>Jakub Drápal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.00474v1</id>
+    <title>Few Trials, Many Metrics: Beta Mixtures for Low-Budget AI Evaluation</title>
+    <updated>2026-10-31T00:00:53Z</updated>
+    <link href="https://arxiv.org/abs/2611.00474v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.00474v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluating a stochastic AI system often requires many repeated samples per instance, especially for metrics defined over long horizons. Recent work has shown that modeling instance-level success probabilities with a Beta distribution recovers Pass@$k$ from far fewer samples than direct estimation. We show that this framework supports a broader range of evaluation targets. We fit a mixture of Beta distributions by marginal maximum likelihood, with the number of components chosen by BIC. From that one fit, we compute Pass$^k$ and AUC@$k$ at any horizon in closed form. We also derive delta-method confidence intervals for these metrics and for Pass@$k$, which require no additional model calls. Treating configurations rather than tasks as instances extends the same model to sensitivity analysis. For repeated success metrics, we find that mixture priors yield more accurate estimators than naive estimation across competition mathematics and graduate-level science benchmarks when extrapolating beyond the observed number of trials, and the resulting intervals cover the full-data reference. When prompts are treated as instances, it estimates the distribution of prompt sensitivity more accurately than a comparable item-response baseline without external covariates. Direct estimators remain preferable once trials reach the target horizon.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-31T00:00:53Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Gustavo Tironi</name>
+    </author>
+    <author>
+      <name>Felipe Maia Polo</name>
+    </author>
+    <author>
+      <name>Diego Mesquita</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.42054v1</id>
+    <title>CRoS: Causality Reward on Scrambled CoTs Improves Accuracy and Reasoning Faithfulness</title>
+    <updated>2026-10-30T17:18:35Z</updated>
+    <link href="https://arxiv.org/abs/2610.42054v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.42054v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning with verifiable rewards (RLVR) has become the standard method for training language models to reason. However, RLVR typically relies solely on outcome correctness, which does not guarantee that the CoT causally contributes to the final answer. Without this connection, outcome rewards may fail to reinforce high-quality reasoning. Existing causality metrics assess CoT causality by perturbing the CoT, such as deleting reasoning steps or injecting errors, and measuring changes in the final answer. However, these perturbations inevitably alter information in each step. Consequently, high causality scores may reflect sensitivity to information changes introduced by perturbation rather than true causality. Such confounding effects further induce undesirable reasoning behaviors when these metrics are used as training rewards, including generating less informative CoTs and reducing exploration and self-correction. To address this problem, we propose CRoS (Causality Reward on Scrambled CoTs), a novel CoT causality metric that perturbs the order of reasoning steps without altering content, thereby preserving information within each step. On Reasoning Gym with Gemma-3-4B, CRoS outperforms existing causality and outcome rewards in out-of-domain accuracy, CoT quality, and CoT faithfulness. Specifically, CRoS achieves 46.8% accuracy on five unseen logic and games datasets, outperforming the strongest baseline (43.8%). It also achieves better CoT quality, consistently outperforming baselines in CoT-Pass@K from K=1 to 128, averaging 43.4% vs. 41.4%. For CoT faithfulness, CRoS achieves a hint acknowledgment score of 34.0% vs. 20.2%.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-30T17:18:35Z</published>
+    <arxiv:comment>17 pages, 3 figures, 14 tables. Project page: https://xxiaoyuuuu.github.io/CRoS-Page</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiao Yu</name>
+    </author>
+    <author>
+      <name>Justin Chih-Yao Chen</name>
+    </author>
+    <author>
+      <name>Zaid Khan</name>
+    </author>
+    <author>
+      <name>Hyunji Lee</name>
+    </author>
+    <author>
+      <name>Mohit Bansal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.40959v2</id>
+    <title>P-ContextBench: From Personal Fact Recall to Personalized Agent Behavior</title>
+    <updated>2026-11-06T22:39:54Z</updated>
+    <link href="https://arxiv.org/abs/2610.40959v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.40959v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are increasingly used for personal tasks, yet evaluating their safe use of personal context remains difficult because such contexts are private, fragmented, dynamic, and socially situated. We introduce P-ContextBench, a realistic, verifiable, and scalable benchmark for evaluating personal-context understanding. P-ContextBench constructs population-structured, life-story-grounded digital humans from demographic seeds reflecting the U.S. population. Rather than using explicit, static profiles, P-ContextBench embeds traits, routines, goals, and constraints as implicit evidence across fragmented, evolving synthetic mobile-app records. It evaluates five capabilities: single-source fact recovery, multi-source fact recovery, temporal state tracking, inference of higher-level personal patterns from routine behavior, and safe handling of requests conflicting with persona-specific constraints through compliance, warning, clarification, or refusal. A multi-stage validation pipeline checks persona plausibility, context recoverability, information leakage, evidence preservation, test-case grounding, and human-judge agreement. We instantiate P-ContextBench with 100 personas, 10,088 hidden facts, 18,261 app-trace fragments, and 4,810 verified test cases. The pipeline supports configurable generation across scales and demographic groups. Cost-effective state-of-the-art (SOTA) LLMs relevant to personal agents achieve below 60% accuracy on temporal tracking, higher-level pattern inference, and constraint-aware action-boundary decisions, with fewer than 10% of test cases answered correctly across all three repeated runs. Even a high-performing SOTA model remains inconsistent on these capabilities. P-ContextBench provides measurable targets for improving the accuracy, reliability, and safety of LLM-based personal agents.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-29T20:38:32Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Grant Nasir Brown</name>
+    </author>
+    <author>
+      <name>Abdul Basir Bari</name>
+    </author>
+    <author>
+      <name>Anmol Tadikonda</name>
+    </author>
+    <author>
+      <name>Isabel Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.39295v1</id>
+    <title>There Is No Free Lunch in RLVR: Every pass@1 Gain Has a pass@k Price</title>
+    <updated>2026-10-29T03:43:26Z</updated>
+    <link href="https://arxiv.org/abs/2610.39295v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.39295v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning with verifiable rewards (RLVR) makes a language model solve more problems on the first try and fewer when given many tries: it raises pass@1 while the base model overtakes it at large sampling budget k. Is this a failure of RL to add reasoning, or a transient that more training removes? We settle the question with a theorem. The reversal is a price, and we compute its exact rate. Modeling RLVR as an exponential tilt of a base policy over strategies shared across prompts, we prove that under exclusive specialization every update that raises pass@1 strictly lowers the success of some prompt; a strictly positive price on prompts (Stiemke duality) is the exact condition, and being merely the best strategy on a prompt is provably not enough. When the loss reaches the hardest prompts, it forces a pass@k crossover, and the number of crossings is at most the sign variation of the shift in per-prompt success, a totally positive bound that is tight and that recovers the known single-crossover result as its order-preserving case. The crossover is not a bug to patch: a constrained update traces the exact pass@1 versus pass@k frontier, and removing the crossover entirely costs the entire pass@1 gain. The same tilt identity yields entropy collapse and the entropy-performance law with an identifiable exponent, unifying two literatures under one mechanism. Reinforcement cannot widen the reasoning frontier; it can only move along it, at a price we make measurable by a diagnostic that reads the bound, the order-preserving test, and the price from any evaluation log. There is no free lunch, only a price.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-29T03:43:26Z</published>
+    <arxiv:comment>19 pages, 4 figures. Code and verification package (34/34 automated checks): https://github.com/yliusci/no-free-lunch-rlvr</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yinuo Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.39247v1</id>
+    <title>SocialArena: Evaluating Social Intelligence in Large Language Models</title>
+    <updated>2026-10-29T03:00:43Z</updated>
+    <link href="https://arxiv.org/abs/2610.39247v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.39247v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce SocialArena, a benchmark for systematically defining and evaluating the social intelligence of large language models (LLMs). Although LLMs are increasingly deployed in socially interactive applications such as mental health counseling, companionship chatbots, and educational tutoring, existing evaluations remain fragmented focusing on isolated capabilities or single scenarios and evaluation reliability is largely unverified. This work makes three main contributions to address these limitations. (1) We first propose a unified three-tier framework that defines social intelligence along three capability dimensions: role-playing ability, mental state reasoning, and behavioral reasoning. To operationalize this definition, we design a role-playing dialogue paradigm with explicit character thinking for evaluation, enabling simultaneous assessment of these capabilities in a manner that mirrors realistic human interactions. (2) To ensure diversity across social scenarios and thereby prevent evaluation conclusions from being confined to specific scenarios, we introduce the U-TRIMF framework, which guides us in synthesizing social contexts with broad coverage. (3) To obtain reliable evaluation, we invest $132.4K to recruit and train human annotators and adopt a human-annotated arena-style protocol, where annotators compare model responses and provide preference labels along with natural-language critiques. We hope that SocialArena can provide valuable insights and guidance for future LLM improvements.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-29T03:00:43Z</published>
+    <arxiv:comment>EMNLP 2026 oral</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zongqi Wang</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Yuchuan Wu</name>
+    </author>
+    <author>
+      <name>Hua Yang</name>
+    </author>
+    <author>
+      <name>Bingxue Qiu</name>
+    </author>
+    <author>
+      <name>Tianle Gu</name>
+    </author>
+    <author>
+      <name>Bing Zhao</name>
+    </author>
+    <author>
+      <name>Yujiu Yang</name>
+    </author>
+    <author>
+      <name>Jieping Ye</name>
+    </author>
+    <author>
+      <name>Yongbin Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.37859v1</id>
+    <title>Seq@K: Evaluating Language Models Under Sequential Feedback</title>
+    <updated>2026-10-27T19:04:51Z</updated>
+    <link href="https://arxiv.org/abs/2610.37859v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.37859v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language-model agents differ fundamentally from prior intelligent systems in their ability to learn from natural language in context. This capability enables agents to iteratively refine their answers in response to feedback, a prevalent mode of operation in modern agentic workflows. However, the community primarily ranks models by metrics such as Pass@1 or Pass@K, which cannot capture how they utilize feedback on prior attempts. We introduce Seq@K, a natural evaluation protocol that measures whether a model can solve a problem within K sequential attempts, provided feedback after each previous failure. Unlike multi-turn agentic benchmarks that examine long-horizon planning, Seq@K isolates and formalizes the core capability of refinement from feedback. We evaluate Seq@K on a suite of 7 benchmarks and 16 frontier models, and show that Seq@K reveals a materially different model-selection landscape: under Seq@K, (1) model rankings often differ, (2) the Pareto frontiers admit more efficient configurations and (3) the gains from choosing the optimal model configuration can widen or shrink relative to those of Pass@K. We further show that analyzing model trajectories under Seq@K helps characterize iterative refinement behavior, such as the rate at which models address issues raised in feedback, or how rigidly they hold onto their own answers. Finally, we study how the nature of feedback affects models' iterative refinement, showing that practitioners must carefully design and benchmark the feedback loops of iterative agentic systems. Together, these results establish how Seq@K offers a more faithful metric for intelligent systems that typically operate in such feedback loop, and the necessity to consider Seq@K in evaluating models for these systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T19:04:51Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Thomson Yen</name>
+    </author>
+    <author>
+      <name>Gilbert Yang</name>
+    </author>
+    <author>
+      <name>Naimeng Ye</name>
+    </author>
+    <author>
+      <name>Minghui Chen</name>
+    </author>
+    <author>
+      <name>Dong Xia</name>
+    </author>
+    <author>
+      <name>Tianyi Shen</name>
+    </author>
+    <author>
+      <name>Yechan Jeon</name>
+    </author>
+    <author>
+      <name>Yaqin Chen</name>
+    </author>
+    <author>
+      <name>Daksh Mittal</name>
+    </author>
+    <author>
+      <name>Fangyu Wu</name>
+    </author>
+    <author>
+      <name>Hongseok Namkoong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.33451v1</id>
+    <title>A Comprehensive Framework for All Stages of Large-Model Training: From Data and Tokenization, through Pretraining, to Post-Training Alignment</title>
+    <updated>2026-10-24T05:09:05Z</updated>
+    <link href="https://arxiv.org/abs/2610.33451v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.33451v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The capabilities of large language models (LLMs) and multimodal LLMs (MLLMs) arise from the synergy of the full training pipeline, including data and tokenization, pretraining, and post-training (supervised fine-tuning, preference alignment, reinforcement learning, and continual optimization), rather than any individual stage. Existing surveys mostly adopt a single-stage or single-technique perspective, treating related research as isolated systems without unified stage division or a horizontally comparable basis.
+  This paper proposes a unified stage division and a six-dimensional analytical framework covering data, objective function, optimization strategy, system constraints, evaluation, and risk and governance. We systematically review 395 core references from 2017 to 2026, and present a conceptual map of cross-stage effects: forward constraints of pretraining on post-training, and reverse empowerment of post-training on data and pretraining.
+  We derive three core findings. First, the comparability of scaling laws depends on data quality and mixture, a long-neglected variable. Second, preference alignment methods (RLHF, DPO) and reasoning reinforcement learning with verifiable rewards redefine post-training boundaries, while the Pass@1 versus Pass@K debate remains unresolved. Third, multimodal training poses structural challenges to the pure-text paradigm in tokenizer design, training objectives, and evaluation.
+  The paper provides a cross-stage effects diagram, a method-family map, a practical decision tree, and at least 10 verifiable open problems, with an extensible skeleton for focused sub-surveys per stage. As of the retrieval date, peer-reviewed evidence (A+B) accounts for approximately 79% of the 395 references.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-24T05:09:05Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xiangjing An</name>
+    </author>
+    <author>
+      <name>Zhibin Jiao</name>
+    </author>
+    <author>
+      <name>Aiting Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.31667v1</id>
+    <title>Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning</title>
+    <updated>2026-10-22T17:59:48Z</updated>
+    <link href="https://arxiv.org/abs/2610.31667v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.31667v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool after generating only a short prefix, committing further computation only to the surviving candidates. Existing pruning strategies divide broadly into two categories: Quality-based methods assign a score to each partial solution and discard those predicted to ultimately lead to an incorrect final solution, while diversity-based methods select partial solutions that follow different reasoning trajectories and are therefore likely to cover different final solutions. The tension between these two objectives is an instance of exploration versus exploitation, yet little to no prior work on pruning exposes this trade-off directly, let alone optimizes it. In this paper, we introduce a pruning procedure that addresses this trade-off directly by optimizing pass@$k$ over the selected solution pool. In particular, it chooses the pool to maximize the probability that at least one of its partial solutions, when continued to completion, yields a correct answer. Because this objective simultaneously rewards high-quality partial solutions and penalizes redundancy among them, quality and diversity are naturally balanced by the criterion itself rather than through separate ad-hoc design choices. On eight open-weight reasoning models, our method outperforms existing quality-based and diversity-based pruning strategies. The gains are particularly pronounced when the pruning procedure keeps a moderate number of partial solutions for continued generation, highlighting the value of directly balancing quality and diversity during pruning.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-22T17:59:48Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mahdi Salmani</name>
+    </author>
+    <author>
+      <name>Adel Javanmard</name>
+    </author>
+    <author>
+      <name>Devansh Gupta</name>
+    </author>
+    <author>
+      <name>Meisam Razaviyayn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.31083v1</id>
+    <title>MQAScore: Fine-Grained Text-Music Alignment Evaluation via Large Audio Language Model</title>
+    <updated>2026-10-22T10:56:25Z</updated>
+    <link href="https://arxiv.org/abs/2610.31083v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.31083v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Text-to-music alignment is commonly evaluated by the global similarity between text and audio embeddings, which collapses all described attributes into a single score and obscures which ones are missing. We instead introduce MQAScore, which verifies each atomic musical concept along five clip-level dimensions (genre, instrument, mood/theme, vocal, and usage) by the probability that a large audio language model (LALM) answers affirmatively to a binary question. To assess evaluator reliability, we construct verification labels from presence/absence annotations and LLM-guided concept substitutions, and propose the Sensitivity-Invariance Ratio, which measures how selectively an evaluator responds to meaning-changing substitutions. Experiments show that concept-level scoring improves both question-answering and similarity-based evaluators, and MQAScore can be a more reliable and interpretable fine-grained complement to global similarity for evaluating text-to-music alignment.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-22T10:56:25Z</published>
+    <arxiv:comment>Submitted to ICASSP 2027</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Wei-Jaw Lee</name>
+    </author>
+    <author>
+      <name>Chun-Ping Wang</name>
+    </author>
+    <author>
+      <name>Xuanjun Chen</name>
+    </author>
+    <author>
+      <name>Yi-Hsuan Yang</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,15 @@
+openrouter dry-run tasks: [72, 96, 306, 469, 591, 721, 1006, 1029, 1192, 1411, 1519]  model: qwen/qwen-2.5-coder-32b-instruct
+q72 california_schools: FAIL (attempts=1, tokens=1066+86, 4s)
+q96 financial: FAIL (attempts=3, tokens=2471+228, 9s)
+q306 toxicology: FAIL (attempts=1, tokens=492+65, 3s)
+q469 card_games: FAIL (attempts=3, tokens=3460+176, 8s)
+q591 codebase_community: PASS (attempts=1, tokens=1009+37, 2s)
+q721 superhero: PASS (attempts=1, tokens=551+26, 2s)
+q1006 formula_1: FAIL (attempts=1, tokens=1274+18, 1s)
+q1029 european_football_2: FAIL (attempts=1, tokens=2115+28, 2s)
+q1192 thrombosis_prediction: PASS (attempts=1, tokens=769+56, 3s)
+q1411 student_club: PASS (attempts=1, tokens=596+53, 2s)
+q1519 debit_card_specializing: PASS (attempts=1, tokens=382+41, 2s)
+
+OPENROUTER DRY RUN DONE: 5/11 passed (45%)  model=qwen/qwen-2.5-coder-32b-instruct
+tokens total: 14185 in + 814 out; est. cost at $0.25/M in, $2.00/M out (list price): $0.01

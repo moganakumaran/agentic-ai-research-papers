@@ -1,0 +1,246 @@
+[
+ {
+  "title": "VMSA: Video Memory Skill Agent for Long Video Understanding",
+  "id": "http://arxiv.org/abs/2611.27381v1",
+  "published": "2026-11-20T09:46:06Z",
+  "summary": "Long-video question answering requires retrieving and integrating relevant evidence from videos spanning hours or even days. Recent agentic approaches organize video information into external memories and iteratively retrieve evidence to answer questions. However, effective retrieval and reasoning remain challenging, as agents must determine what information to search for, which memory sources to access, and how to connect evidence across distant temporal intervals. To address these challenges, we propose Video Memory Skill Agent (VMSA), a framework that jointly designs structured video memori",
+  "cats": [
+   "cs.CV",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain",
+  "id": "http://arxiv.org/abs/2611.27138v1",
+  "published": "2026-11-20T05:19:40Z",
+  "summary": "Language models fuse reports in retrieval, multi-agent consensus and agent memory, where treating shared-source reports as independent can double count evidence. A common remedy is an instruction to count each source once. Its value depends on the receiver's raw baseline. Pricing it needs an exact reference. We build the graded-dependence exact reference: binary worlds with single-report reliability 0.65 and four dependence levels, whose disclosed parameters give every world an exact posterior and every rule a target risk. The paired gain protocol scores raw and instructed answers of four conf",
+  "cats": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ {
+  "title": "AstronautBench: Measuring Agent Self-Improvement Across Episodes Through Knowledge, Evidence, and Progress",
+  "id": "http://arxiv.org/abs/2611.26910v1",
+  "published": "2026-11-19T23:48:39Z",
+  "summary": "LLM agents are expected to improve themselves from their own experience across episodes, with fixed weights. Self-improvement in an embodied world cannot be read from one measure. Existing benchmarks measure task progress, world-knowledge question answering (QA), and episodic memory, but a correct answer does not show that the agent ever observed the evidence for it, and progress does not show what the agent learned. We introduce AstronautBench, which measures one agent's self-improvement through three views on the same run: what it knows, whether its own evidence supports that knowledge, and ",
+  "cats": [
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ {
+  "title": "How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents",
+  "id": "http://arxiv.org/abs/2611.26361v1",
+  "published": "2026-11-19T16:29:16Z",
+  "summary": "LLM agents on long-horizon tasks fail in recurring, procedural ways. They mis-paginate an API, resolve the wrong entity, or answer when no answer was asked. We built a pipeline that lets an agent learn from its own history. It first mines short \\emph{lessons} from the agent's own trajectories, one to three per episode. It then consolidates those lessons into a smaller set of \\emph{guidelines}, where each guideline records how many lessons it merged. At inference the agent receives either all guidelines or a selected subset. The pipeline ships in the open-source altk-evolve library and is deplo",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Forget Freely, Grep Later: Lossless, Index-Free Memory for Long-Horizon LLM Agents",
+  "id": "http://arxiv.org/abs/2611.25123v1",
+  "published": "2026-11-18T20:02:57Z",
+  "summary": "Long-horizon LLM agents often exceed their context windows, forcing them to discard information that may be needed later. Existing context management strategies rely on summarization, masking, or structured memory, requiring decisions about what to preserve or how to retrieve it before future needs are known. However, these methods can introduce lossy compression, potentially discarding details needed for future tasks. To address this limitation, we introduce GrepMem, a simple, lossless, and index-free memory mechanism built on two components: an append-only plain-text log of the agent's compl",
+  "cats": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Resolution as Attention for Efficient Agent Memory Perception",
+  "id": "http://arxiv.org/abs/2611.24422v1",
+  "published": "2026-11-18T13:43:16Z",
+  "summary": "LLM-based agents accumulate extensive interaction histories when solving complex, long-horizon tasks, making efficient memory management critical to their performance and scalability. While existing memory management methods primarily focus on what to retain or retrieve, they often overlook how much perceptual detail should be allocated to individual past interactions. We posit that effective agent memory depends not only on the information preserved, but also on the granularity at which each past interaction is perceived. Motivated by this insight, we propose Resolution as Attention (RAA), a ",
+  "cats": [
+   "cs.AI",
+   "cs.CV"
+  ]
+ },
+ {
+  "title": "ARISE: Practical Self-Evolving Memory for Accurate and Cost-Efficient Enterprise Agents",
+  "id": "http://arxiv.org/abs/2611.23588v1",
+  "published": "2026-11-17T22:38:58Z",
+  "summary": "Enterprise LLM agents operate in dynamic environments where foundation models evolve rapidly, workflows update frequently, and deployments need to satisfy accuracy and cost requirements. We propose ARISE (Agent Refinement through Iterative Self-Evaluation), a practical memory architecture in which the agent's memory evolves from its own failures without updating model weights, tools, or workflow logic. ARISE uses the model itself or a teacher model to attribute the failures and propose corrections. Then, ARISE keeps the corrections as retrievable micro memory, consolidates them into macro rule",
+  "cats": [
+   "cs.AI",
+   "cs.MA"
+  ]
+ },
+ {
+  "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+  "id": "http://arxiv.org/abs/2611.22245v2",
+  "published": "2026-11-17T05:47:01Z",
+  "summary": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-age",
+  "cats": [
+   "cs.AI",
+   "cs.MA"
+  ]
+ },
+ {
+  "title": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
+  "id": "http://arxiv.org/abs/2611.22179v1",
+  "published": "2026-11-17T04:16:34Z",
+  "summary": "Agentic memory research has accumulated extraction, supersession, reflection, and graph synthesis on top of retrieval-augmented generation. However, we found that almost none of those primitives earn their cost in our tested memory benchmarks: we show this with BRIDGE, a deliberately minimal RAG memory with chained observation notes, hybrid BM25 with cosine retrieval, and chronological rendering, which reaches parity within bootstrap CI with the prior SOTA on LongMemEval-S and BEAM, and beats the best memory baseline on EverMemBench by 5.7-6.3 points at matched reader. It runs at ~5-7K reader-",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "RegimeCouncil: Paired-Evidence Routing For Memory Conflict Governance In LLM Agents",
+  "id": "http://arxiv.org/abs/2611.22113v2",
+  "published": "2026-11-17T02:56:43Z",
+  "summary": "Alongside memory storage and retrieval, a fundamental challenge in long-term LLM agent systems is how the agent should act when stored memories conflict with an evolving world. Facts often go stale without explicit deletion, so the conflict surfaces before the store is refreshed: delayed feedback shows that acting on one outdated record hurt, but not whether suppression should stay on that fact (a local policy) or extend to other stored facts (a global policy). Existing systems hard-code one of these scopes at design time. We formulate this online choice, under hidden validity and delayed feed",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "EvoDisco: Strategy Discovery for Evolving Agent Memory",
+  "id": "http://arxiv.org/abs/2611.22102v1",
+  "published": "2026-11-17T02:37:56Z",
+  "summary": "Large language model agents accumulate experience in memory, and how that memory evolves during interaction is as important as what it stores. Recent methods update memory online, yet both the operators that transform memory and the rules that select them remain fixed by design. We propose EvoDisco, which formulates agent memory evolution as evolutionary strategy discovery: the agent must discover which operator to apply, when to apply it, and how to instantiate it, rather than rewriting memory under a static operator schedule. A learnable policy conditions on the current memory state and rece",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "HEAMS: Holistic Evaluation of Agent Memory Systems",
+  "id": "http://arxiv.org/abs/2611.20144v1",
+  "published": "2026-11-15T17:26:34Z",
+  "summary": "Memory systems allow AI agents to persist information across interactions, making them more personalized and more capable on long-horizon tasks. This persistence introduces new risks: stored information can be disclosed in inappropriate contexts, resist correction or deletion, be retained beyond what users desire, or be poisoned to influence later agent behaviour. Yet memory systems are typically evaluated on task performance and efficiency alone. We argue that a memory system should instead be understood as the custodian of its user's persistent information, with responsibilities that extend ",
+  "cats": [
+   "cs.AI",
+   "cs.CL",
+   "cs.CR"
+  ]
+ },
+ {
+  "title": "Remember, Replay, Adapt: Learning from Past Experience in Online Vision-and-Language Navigation",
+  "id": "http://arxiv.org/abs/2611.19901v1",
+  "published": "2026-11-15T09:30:18Z",
+  "summary": "Existing feedback-based methods for online vision-and-language navigation (VLN) primarily learn from current episode outcomes, leaving previously acquired feedback underutilized. Inspired by human episodic memory, we propose R2A, an online VLN adaptation framework that continually reuses successful and failed navigation experiences for policy learning. Specifically, Success-Failure Memory (SFM) retains successful and failed navigation episodes with acquired feedback and retrieves task-relevant experiences based on incoming instructions, enabling historical feedback to guide subsequent navigati",
+  "cats": [
+   "cs.CV",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "When Facts Change, Which Decisions Break? Dependency-Aware Context Graphs for Agents",
+  "id": "http://arxiv.org/abs/2611.19859v1",
+  "published": "2026-11-15T07:53:36Z",
+  "summary": "When an observed fact changes, an agent must identify and repair the decisions that depend on it while preserving unaffected outputs. We investigate the reliability-cost trade-off of field-level dependency graphs extracted from actual agent read traces. A controlled benchmark spans three executable workflow domains and four successive updates, with independent imperative and expression-based references. Across 120 workflows, two models and two repeated runs, we compare full recomputation, rolling summary memory, lexical retrieval, trace-extracted dependencies and verified dependency upper boun",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "StaleBench: Isolating Stale Retrieval in Agent Memory, and Pricing the Fix",
+  "id": "http://arxiv.org/abs/2611.19752v1",
+  "published": "2026-11-15T03:29:02Z",
+  "summary": "An agent that stores facts over time eventually stores several versions of the same fact. Asked a value-agnostic question - \"which team does X play for now?\" - a similarity retriever cannot prefer the current version, because every version matches the entity the query names. StaleBench isolates this stale-retrieval failure on 892 real updating facts, with currency labels from the source (Wikidata validity years via TempLAMA), never from a retrieval score. Our central result is that retrieval metrics can rank memory policies backwards: a retention policy and its retain-everything control return",
+  "cats": [
+   "cs.CL",
+   "cs.AI",
+   "cs.IR"
+  ]
+ },
+ {
+  "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+  "id": "http://arxiv.org/abs/2611.17068v1",
+  "published": "2026-11-12T16:42:04Z",
+  "summary": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurr",
+  "cats": [
+   "cs.CL",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory",
+  "id": "http://arxiv.org/abs/2611.15729v1",
+  "published": "2026-11-11T17:06:07Z",
+  "summary": "Enterprise agents accumulate memory across dozens of sessions in which facts contradict, get superseded, and blur as similarly named entities collide in embedding space. The field treats this as a retrieval problem; we show it is not. On ENT-310, a synthetic enterprise sales-agent memory benchmark of 310 queries (210 answerable, 100 unanswerable), a vanilla Retrieval-Augmented Generation (RAG) reader over a memory store already matches strong memory systems on the recall pillars. Retention and currency are near-saturated, roughly 0.93 to 0.98 for every competent system, so recall is essentiall",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
+  "id": "http://arxiv.org/abs/2611.15600v1",
+  "published": "2026-11-11T15:17:38Z",
+  "summary": "Large language model (LLM) agents increasingly operate over long Web interaction histories, making memory management critical for reliable and efficient decision making. Existing methods primarily optimize storage, retrieval, or compression, but the memories most semantically relevant to the current state are not necessarily those that most improve the agent's action. We introduce MemCredit, a decision-centric memory framework that shifts memory selection from semantic relevance to decision utility. MemCredit estimates the state-, reference-context-, and policy-conditional marginal contributio",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation",
+  "id": "http://arxiv.org/abs/2611.14009v2",
+  "published": "2026-11-10T12:49:24Z",
+  "summary": "Language-model agents increasingly tackle long-horizon tasks whose interaction histories exceed the model's active context. They must therefore decide what to write down and what to read back, and when to do either. Recent work has begun to use on-policy distillation (OPD) to make memory control part of the policy, relying on memory tools and compaction protocols that lie outside either model's pre-training. However, this weakens the distillation on both sides: the teacher cannot give useful guidance on an interface it has never used, and the student samples too few meaningful memory actions f",
+  "cats": [
+   "cs.LG",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ {
+  "title": "Correct Answers from Insufficient Histories: A Controlled Study of Agent Memory Evaluation",
+  "id": "http://arxiv.org/abs/2611.11840v1",
+  "published": "2026-11-09T03:54:25Z",
+  "summary": "An answer can match the reference for a complete agent history even when the reader's visible history does not determine it. We study this distinction using executable device logs. Our protocol separates reference agreement, certified evidence sufficiency, and context-appropriate behavior. Insufficiency requires two legal histories yielding byte-identical visible contexts but different answers; public chronology and query cutoffs certify sufficient prefixes. On 80 confirmation histories, Qwen3-32B matches 87 hidden references among 203 insufficient raw-prefix instances, with only seven appropr",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "When Experience Becomes a Backdoor: Poisoning Self-Evolving LLM Agents via Failure-Aware Task Optimization",
+  "id": "http://arxiv.org/abs/2611.10542v1",
+  "published": "2026-11-07T07:17:53Z",
+  "summary": "Large language model (LLM) agents increasingly improve themselves through self-evolution, distilling execution experience into persistent, reusable skills. However, this persistence creates a new attack surface: malicious rules implanted into skills can compromise subsequent agent behavior. Existing skill backdoor attacks typically assume direct manipulation of the victim's skills, which is impractical when skills are constructed internally by a trusted evolver. In this paper, we study a novel problem of task-level backdoor attacks, where the attacker can only inject poisoned evolution tasks, ",
+  "cats": [
+   "cs.CR",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+  "id": "http://arxiv.org/abs/2611.09721v1",
+  "published": "2026-11-06T17:00:09Z",
+  "summary": "LLM agents benefit from using memory systems to improve performance on long-horizon, multi-session tasks. However, memory introduces a critical attack surface. Malicious instructions encountered in one session may be stored and propagated through memory before being retrieved and acted upon in later sessions. Because memory systems differ in how they process and retrieve information, the downstream effects of poisoning can vary significantly across systems. To quantify the effects of poisoning across different memory architectures, we introduce MemoryDojo, a benchmark for tracing the lifecycle",
+  "cats": [
+   "cs.CR",
+   "cs.AI",
+   "cs.CL"
+  ]
+ },
+ {
+  "title": "HiMEM: Hippocampus-Inspired Memory Consolidation, Pruning, and Composition for Vision-Language-Action Models in 3D Scenes",
+  "id": "http://arxiv.org/abs/2611.09355v1",
+  "published": "2026-11-06T11:50:36Z",
+  "summary": "Memory plays a crucial role in long-horizon task execution and cross-task generalization for Vision-Language-Action (VLA) models operating in complex 3D scenes. However, existing VLA memory mechanisms suffer from memory noise, particularly in complex 3D scenes, as stored episodic memories contain extensive redundant details about scene layouts, object configurations, and robot-specific states, which obscure generalizable manipulation principles and hinder cross-task transfer. To address this challenge, we first introduce a hippocampus-inspired memory consolidation mechanism that synthesizes ex",
+  "cats": [
+   "cs.CV",
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Decision Context: Persistent Behavioral Learning for AI Agents",
+  "id": "http://arxiv.org/abs/2611.08644v1",
+  "published": "2026-11-05T19:48:10Z",
+  "summary": "LLM agents do not learn from corrections across sessions. A user fixes the same mistake at the start of every conversation. Existing agent memory systems primarily handle facts, such as preferences, entities, and conversational history, rather than procedural knowledge. We present Forge Decision Context (forge_dc), a system that captures behavioral signals from human corrections and self-assessed tool-call failures, compiles them into imperative RULE directives, and injects them at the decision points where they apply. We evaluate forge_dc alongside four predecessor approaches on DC-Bench, a n",
+  "cats": [
+   "cs.AI"
+  ]
+ },
+ {
+  "title": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
+  "id": "http://arxiv.org/abs/2611.08341v1",
+  "published": "2026-11-05T17:27:08Z",
+  "summary": "AI agents store text as embedding vectors and compress them at scale. A compression is accepted when each item's nearest neighbors survive, but agents also consolidate, delete, and compare memories, tasks that depend on which items lie far apart. We evaluate both ends with two label-free fidelities from our prior work: the local fidelity $L$ at 10 neighbors and the global fidelity $G$ at 30 to 50 percent of the memory. At 96 bytes per passage, rescored binary codes reach an $L$ of 0.97 yet move 10.1 percent of passages to another theme; PCA with 8-bit codes, at an $L$ of 0.77, moves 1.7 percen",
+  "cats": [
+   "cs.AI"
+  ]
+ }
+]

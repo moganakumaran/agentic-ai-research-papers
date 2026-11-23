@@ -1,0 +1,27 @@
+base tasks: 60; L1 share: 1.00; per DB: {'california_schools': 6, 'card_games': 6, 'codebase_community': 6, 'debit_card_specializing': 6, 'european_football_2': 6, 'financial': 5, 'formula_1': 5, 'student_club': 5, 'superhero': 5, 'thrombosis_prediction': 5, 'toxicology': 5}
+built: 60/60; silent: 29; overt: 31
+operators: {'schema_column_rename': 23, 'data_unit_change': 8, 'category_merge': 9, 'schema_type_change': 8, 'temporal_grain_change': 2, 'data_value_recode': 9, 'null_semantics_change': 1}
+substitutions: 34
+LOG: q846 op schema_column_rename: ERROR OperationalError no such column: T1.driverId_v2
+LOG: q717 op schema_column_rename: ERROR OperationalError no such column: T3.id_v2
+LOG: q195 op category_merge: ERROR IntegrityError UNIQUE constraint failed: bond.bond_id
+LOG: q1483 op data_unit_change: ERROR IntegrityError UNIQUE constraint failed: yearmonth.Date, yearmonth.CustomerID
+LOG: q1028 op category_merge: ERROR IntegrityError UNIQUE constraint failed: League.name
+LOG: q847 op schema_column_rename: ERROR OperationalError no such column: T1.driverId_v2
+LOG: q197 op schema_column_rename: ERROR OperationalError no such column: T2.molecule_id_v2
+LOG: q17 op category_merge: ERROR IntegrityError UNIQUE constraint failed: satscores.cds
+LOG: q198 op schema_column_rename: ERROR OperationalError no such column: T3.molecule_id_v2
+LOG: q352 op category_merge: ERROR IntegrityError UNIQUE constraint failed: cards.uuid
+LOG: q539 op schema_column_rename: ERROR OperationalError no such column: T2.Id_v2
+LOG: q539 op data_unit_change: ERROR IntegrityError UNIQUE constraint failed: posts.Id
+LOG: q1032 op schema_column_rename: ERROR OperationalError no such column: id_v2
+LOG: q99 op data_unit_change: ERROR IntegrityError UNIQUE constraint failed: account.account_id
+LOG: q99 op schema_column_rename: ERROR OperationalError no such column: T1.account_id_v2
+LOG: q200 op schema_column_rename: ERROR OperationalError no such column: T2.molecule_id_v2
+LOG: q116 op schema_column_rename: ERROR OperationalError no such column: T1.account_id_v2
+LOG: q116 op data_unit_change: ERROR IntegrityError UNIQUE constraint failed: account.account_id
+LOG: q1157 op schema_column_rename: ERROR OperationalError no such column: T1.ID_v2
+LOG: q565 op data_unit_change: ERROR IntegrityError UNIQUE constraint failed: comments.Id
+LOG: q565 op schema_column_rename: ERROR OperationalError no such column: T2.Id_v2
+LOG: q1498 op category_merge: ERROR IntegrityError UNIQUE constraint failed: yearmonth.Date, yearmonth.CustomerID
+wrote drift_spec.csv
