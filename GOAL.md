@@ -4,7 +4,7 @@ Goal ID: goal_6b173cbcb5be
 Goal slug: research-papers-on-agentic-ai-for-data-ai
 
 ## Description
-Mohan wants to track recent trends in AI agentic engineering daily across arXiv and major AI, NLP, data and software engineering venues, identify research gaps, and turn the strongest gaps into papers. The first paper focus is agent evaluation and reliability for data work, including Text-to-SQL and data analytics agents.
+ track recent trends in AI agentic engineering daily across arXiv and major AI, NLP, data and software engineering venues, identify research gaps, and turn the strongest gaps into papers. The first paper focus is agent evaluation and reliability for data work, including Text-to-SQL and data analytics agents.
 
 ## Setup (2026-11-22)
 - Daily briefing cron: daily-agentic-ai-research-briefing, around 8am America/Los_Angeles
