@@ -1,0 +1,186 @@
+{
+  "ok": true,
+  "pdf": "/home/hatch/workspace/goals/research-papers-on-agentic-ai-for-data-ai/files/paper-1-explainer-for-beginners/paper-1-explainer-for-beginners.pdf",
+  "pages": 0,
+  "pngs": [],
+  "fonts": {
+    "missing": [],
+    "unused": [],
+    "used": [
+      "Liberation Sans"
+    ],
+    "expected": [
+      "Liberation Sans:400",
+      "Liberation Sans:700"
+    ]
+  },
+  "overflow": [],
+  "text_floor": [
+    {
+      "index": 0,
+      "runs": [
+        {
+          "pt": 8.5,
+          "chars": 79,
+          "max_node_chars": 44,
+          "sample": "A beginner-friendly explainer • For data"
+        },
+        {
+          "pt": 9,
+          "chars": 119,
+          "max_node_chars": 42,
+          "sample": "“What were total sales in California las"
+        },
+        {
+          "pt": 9.5,
+          "chars": 140,
+          "max_node_chars": 73,
+          "sample": "AI → writes SQL from scratch → answer. S"
+        },
+        {
+          "pt": 10.5,
+          "chars": 542,
+          "max_node_chars": 135,
+          "sample": "Think of the AI as a junior data analyst"
+        },
+        {
+          "pt": 12,
+          "chars": 189,
+          "max_node_chars": 189,
+          "sample": "We gave an AI a notebook of its past mis"
+        },
+        {
+          "pt": 14,
+          "chars": 3,
+          "max_node_chars": 1,
+          "sample": "→"
+        },
+        {
+          "pt": 14.5,
+          "chars": 50,
+          "max_node_chars": 31,
+          "sample": "The job, in one picture"
+        },
+        {
+          "pt": 27,
+          "chars": 36,
+          "max_node_chars": 36,
+          "sample": "Does a notebook help an AI get better at"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "runs": [
+        {
+          "pt": 8.5,
+          "chars": 103,
+          "max_node_chars": 68,
+          "sample": "Figure 1 - Second AI model tested: ident"
+        },
+        {
+          "pt": 10,
+          "chars": 148,
+          "max_node_chars": 28,
+          "sample": "Lap time as text"
+        },
+        {
+          "pt": 10.5,
+          "chars": 886,
+          "max_node_chars": 181,
+          "sample": "Keep it fair - same budget for everyone."
+        },
+        {
+          "pt": 11.5,
+          "chars": 26,
+          "max_node_chars": 26,
+          "sample": "A real example: the fastest lap"
+        },
+        {
+          "pt": 13,
+          "chars": 2,
+          "max_node_chars": 1,
+          "sample": "1"
+        },
+        {
+          "pt": 14.5,
+          "chars": 52,
+          "max_node_chars": 27,
+          "sample": "Two rules made the test honest"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "runs": [
+        {
+          "pt": 8.5,
+          "chars": 183,
+          "max_node_chars": 91,
+          "sample": "Figure 2 - The gain exists only when you"
+        },
+        {
+          "pt": 9,
+          "chars": 462,
+          "max_node_chars": 187,
+          "sample": "Before you trust any score, check the te"
+        },
+        {
+          "pt": 10,
+          "chars": 7,
+          "max_node_chars": 7,
+          "sample": "revenue"
+        },
+        {
+          "pt": 10.5,
+          "chars": 826,
+          "max_node_chars": 111,
+          "sample": "We also tried a different trick: write"
+        },
+        {
+          "pt": 14.5,
+          "chars": 74,
+          "max_node_chars": 29,
+          "sample": "The one “win” was an illusion"
+        }
+      ]
+    }
+  ],
+  "image_resolution": [
+    {
+      "index": 0,
+      "images": []
+    },
+    {
+      "index": 1,
+      "images": [
+        {
+          "rendered_w": 339.3,
+          "natural_w": 2127,
+          "src_head": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "images": [
+        {
+          "rendered_w": 339.3,
+          "natural_w": 2127,
+          "src_head": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+        },
+        {
+          "rendered_w": 339.3,
+          "natural_w": 2127,
+          "src_head": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+        }
+      ]
+    }
+  ],
+  "geometry": {
+    "failures": [],
+    "advisories": []
+  },
+  "gate_failures": [],
+  "advisories": []
+}

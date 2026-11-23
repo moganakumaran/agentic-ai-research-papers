@@ -1,0 +1,10 @@
+# Datasets are excluded from git: BIRD Dev (~1.8 GB, downloadable from the
+# BIRD benchmark site), the 60 derived drift databases, and the Jin et al.
+# corrected-label repository clone. Everything needed to rebuild them is in
+# the repo: hidden_files/build_splits.py, build_drift.py, fix_drift_silent.py,
+# drift_spec.csv, and the Substrate Specification in files/.
+hidden_files/datasets/
+
+__pycache__/
+*.pyc
+.DS_Store
